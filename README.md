@@ -1,13 +1,14 @@
-# Horned Owl Hub Jr
+# Hornedo Middle School Hub
 
-This repository serves as a simple forwarder to the Hornedo Middle School Hub "Jr" Google Sites page.
+This repository serves as a simple forwarder to the Hornedo Middle School Google Sites pages.
 
 ## Purpose
 
-Currently, this repository redirects visitors to: https://sites.google.com/episd.org/hornedohubjr/home
+This repository provides redirects to different Hornedo Middle School sites:
 
-In the future, this repository may host content directly using GitHub Pages.
+- Main site: https://sites.google.com/episd.org/hornedohubjr/home
+- Teachers site: `/teachers` → https://sites.google.com/episd.org/hornedotornados/home
 
 ## Deployment
 
-This site is configured to be deployed via GitHub Pages and will automatically redirect users to the Google Sites page.
+This site is configured to be deployed via GitHub Pages and will automatically redirect users to the appropriate Google Sites pages.
