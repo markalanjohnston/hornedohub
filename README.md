@@ -11,4 +11,16 @@ This repository provides redirects to different Hornedo Middle School sites:
 
 ## Deployment
 
-This site is configured to be deployed via GitHub Pages and will automatically redirect users to the appropriate Google Sites pages.
+This site is configured to be deployed via GitHub Pages. The main site redirect is handled by JavaScript in `index.html`.
+
+### Cloudflare Redirect Rules
+
+The teachers site redirect is handled by a Cloudflare redirect rule with the following conditions:
+
+```
+(http.request.full_uri wildcard r"https://*.hornedohub.com/teachers") or
+(http.request.full_uri wildcard r"http://*.hornedohub.com/teachers") or
+(http.request.full_uri wildcard r"http*://teacher*.hornedohub.com/*")
+```
+
+This rule performs a 301 redirect to `https://sites.google.com/episd.org/hornedotornados/home`.
